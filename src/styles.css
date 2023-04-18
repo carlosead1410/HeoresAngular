@@ -1,3 +1,7 @@
+body{
+  padding-bottom: 50px !important;
+}
+
 /* You can add global styles to this file, and also import other style files */
 .animated {
   -webkit-animation-duration: 1s;
@@ -26,3 +30,6 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
