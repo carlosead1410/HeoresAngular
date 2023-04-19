@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroesService } from './services/heroes.service';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { HeroesBusquedaComponent } from './components/heroes-busqueda/heroes-busqueda.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HeroesBusquedaComponent } from './components/heroes-busqueda/heroes-bus
     HeroesComponent,
     HeroeComponent,
     HeroesBusquedaComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,
