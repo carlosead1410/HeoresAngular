@@ -1,0 +1,8 @@
+  .card-columns {
+    column-count: 3;
+  }
+  .bio{
+    max-height: 200px !important;
+    overflow-y: scroll;
+  }
+
