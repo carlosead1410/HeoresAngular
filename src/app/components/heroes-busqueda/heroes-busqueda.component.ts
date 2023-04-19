@@ -7,19 +7,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeroesBusquedaComponent {
   heroes:Heroes[]=[];
-
+  term: string = "";
   constructor(private _heroesService: HeroesService,
               private router:Router,
               private activatedRoute:ActivatedRoute,) {
     this.heroes = this._heroesService.getHeroes();
     this.activatedRoute.params.subscribe(params =>{
-      console.log(params['term']);
-      this.heroes = this._heroesService.buscarHeroes(params['term']);
+      this.term = params['term'];
+      this.heroes = this._heroesService.buscarHeroes(this.term);
+
     });
   }
 
   verHeroe(idx:number){
     this.router.navigate(['/heroe',idx]);
   }
+
+
 }
 
